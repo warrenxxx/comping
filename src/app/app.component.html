@@ -1,1 +1,5 @@
-<textarea ></textarea>
+<textarea [(ngModel)]="texto2"  (ngModelChange)="act($event)"></textarea>
+<button (click)="goatr()">w</button>
+<div *ngFor="let i of salida">
+  {{i.tok}}-  {{i.typo}}<br>
+</div>
